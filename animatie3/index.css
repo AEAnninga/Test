@@ -1,0 +1,236 @@
+@charset "UTF-8";
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.social-media2 {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  align-items: flex-end;
+  position: sticky;
+  bottom: 50px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social-media2 li > a {
+  text-decoration: none;
+}
+.social-media2__blog {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 28px;
+  padding: 12px;
+  background-color: #e17b77;
+  width: 50px;
+  height: 50px;
+  transition: width 1s;
+  color: white;
+}
+.social-media2__blog::before {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 30px;
+  content: "";
+  color: white;
+}
+.social-media2__blog::after {
+  content: "Check out my Blog";
+  color: white;
+  text-decoration: underline;
+  height: 20px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.social-media2__blog:hover {
+  width: 250px;
+  transition: width 1s;
+  overflow: hidden;
+}
+.social-media2__blog:hover::after {
+  content: "Check out my Blog";
+  color: white;
+  text-decoration: underline;
+  height: 20px;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 3s;
+}
+.social-media2__facebook {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 37px;
+  padding: 12px;
+  background-color: #3b5998;
+  width: 50px;
+  height: 50px;
+  transition: width 1s;
+  overflow: hidden;
+  color: white;
+}
+.social-media2__facebook::before {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 30px;
+  content: "";
+  color: white;
+}
+.social-media2__facebook::after {
+  content: "Like my Facebook page";
+  color: white;
+  text-decoration: underline;
+  height: 20px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.social-media2__facebook:hover {
+  width: 250px;
+  transition: width 1s;
+  overflow: hidden;
+}
+.social-media2__facebook:hover::after {
+  content: "Like my Facebook page";
+  color: white;
+  text-decoration: underline;
+  height: 20px;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 3s;
+}
+.social-media2__twitter {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 26px;
+  padding: 12px;
+  background-color: #00aced;
+  width: 50px;
+  height: 50px;
+  transition: width 1s;
+  overflow: hidden;
+  color: white;
+}
+.social-media2__twitter::before {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 30px;
+  content: "";
+  color: white;
+}
+.social-media2__twitter::after {
+  content: "Follow me on Twitter";
+  color: white;
+  text-decoration: underline;
+  height: 20px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.social-media2__twitter:hover {
+  width: 250px;
+  transition: width 1s;
+  overflow: hidden;
+}
+.social-media2__twitter:hover::after {
+  content: "Follow me on Twitter";
+  color: white;
+  text-decoration: underline;
+  height: 20px;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 3s;
+}
+.social-media2__github {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 33px;
+  padding: 12px;
+  background-color: #333;
+  width: 50px;
+  height: 50px;
+  transition: width 1s;
+  overflow: hidden;
+  color: white;
+}
+.social-media2__github::before {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 30px;
+  content: "";
+  color: white;
+  margin-left: -5px;
+}
+.social-media2__github::after {
+  content: "See projects on Github";
+  color: white;
+  text-decoration: underline;
+  height: 20px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.social-media2__github:hover {
+  width: 250px;
+  transition: width 1s;
+  overflow: hidden;
+}
+.social-media2__github:hover::after {
+  content: "See projects on Github";
+  color: white;
+  text-decoration: underline;
+  height: 20px;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 3s;
+}
+.social-media2__linkedin {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: start;
+  align-items: center;
+  gap: 30px;
+  padding: 12px;
+  background-color: #007bb6;
+  width: 50px;
+  height: 50px;
+  transition: width 1s;
+  overflow: hidden;
+  color: white;
+}
+.social-media2__linkedin::before {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 30px;
+  content: "";
+  color: white;
+}
+.social-media2__linkedin::after {
+  content: "Connect on LinkedIn";
+  color: white;
+  text-decoration: underline;
+  height: 20px;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.4s;
+}
+.social-media2__linkedin:hover {
+  width: 250px;
+  transition: width 1s;
+  overflow: hidden;
+}
+.social-media2__linkedin:hover::after {
+  content: "Connect on LinkedIn";
+  color: white;
+  text-decoration: underline;
+  height: 20px;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 3s;
+}/*# sourceMappingURL=index.css.map */

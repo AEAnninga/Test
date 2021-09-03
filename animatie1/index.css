@@ -1,0 +1,180 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes move {
+  from {
+    transform: translateX(-500px) rotateX(0deg);
+  }
+  to {
+    transform: translateX(0px) rotateZ(7200deg);
+  }
+}
+
+@keyframes move {
+  from {
+    transform: translateX(-500px) rotateX(0deg);
+  }
+  to {
+    transform: translateX(0px) rotateZ(7200deg);
+  }
+}
+@-webkit-keyframes move2 {
+  from {
+    transform: scale(1) translateY(0px);
+  }
+  to {
+    transform: scale(1.5) translateY(50px);
+  }
+}
+@keyframes move2 {
+  from {
+    transform: scale(1) translateY(0px);
+  }
+  to {
+    transform: scale(1.5) translateY(50px);
+  }
+}
+@-webkit-keyframes move3 {
+  from {
+    transform: scale(1) translate(0px, 0px);
+  }
+  to {
+    transform: scale(1.5) translate(75px, 50px);
+  }
+}
+@keyframes move3 {
+  from {
+    transform: scale(1) translate(0px, 0px);
+  }
+  to {
+    transform: scale(1.5) translate(75px, 50px);
+  }
+}
+@-webkit-keyframes move4 {
+  from {
+    transform: scale(1) translate(0px, 0px);
+  }
+  to {
+    transform: scale(1.5) translate(-75px, 50px);
+  }
+}
+@keyframes move4 {
+  from {
+    transform: scale(1) translate(0px, 0px);
+  }
+  to {
+    transform: scale(1.5) translate(-75px, 50px);
+  }
+}
+body {
+  background: turquoise;
+}
+
+nav {
+  -webkit-animation-name: move;
+          animation-name: move;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(0.37, 0.32, 0, 1.87);
+          animation-timing-function: cubic-bezier(0.37, 0.32, 0, 1.87);
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  display: flex;
+  align-items: center;
+  height: 150px;
+}
+nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  list-style: none;
+  width: 100%;
+  gap: 10px;
+  padding: 10px;
+}
+nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 100%;
+  height: 100px;
+  background: blueviolet;
+}
+nav ul li:active {
+  position: initial;
+  box-shadow: 40px 40px 40px blueviolet;
+  -webkit-animation: move2;
+          animation: move2;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-timing-function: cubic-bezier(0.97, 0.29, 0.21, 1.87);
+          animation-timing-function: cubic-bezier(0.97, 0.29, 0.21, 1.87);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+nav ul li:first-child:active {
+  position: initial;
+  box-shadow: 40px 40px 40px blueviolet;
+  -webkit-animation: move3;
+          animation: move3;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-timing-function: cubic-bezier(0.97, 0.29, 0.21, 1.87);
+          animation-timing-function: cubic-bezier(0.97, 0.29, 0.21, 1.87);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+nav ul li:nth-child(4) a {
+  color: whitesmoke;
+}
+nav ul li:nth-child(4):active {
+  position: initial;
+  box-shadow: 40px 40px 40px blueviolet;
+  -webkit-animation: move4;
+          animation: move4;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-timing-function: cubic-bezier(0.97, 0.29, 0.21, 1.87);
+          animation-timing-function: cubic-bezier(0.97, 0.29, 0.21, 1.87);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li a:active {
+  position: initial;
+  box-shadow: 40px 40px 40px blueviolet;
+  -webkit-animation: move2;
+          animation: move2;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-animation-timing-function: cubic-bezier(0.97, 0.29, 0.21, 1.87);
+          animation-timing-function: cubic-bezier(0.97, 0.29, 0.21, 1.87);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+nav ul li a[href="https://www.google.nl"] {
+  color: purple;
+}
+nav ul li a[for=Ethan] {
+  color: aqua;
+}
+
+article h1 {
+  color: whitesmoke;
+  background-color: purple;
+}
+article p {
+  color: whitesmoke;
+  background: blue;
+}
+article p strong {
+  color: darkslategrey;
+  background: yellow;
+}/*# sourceMappingURL=index.css.map */

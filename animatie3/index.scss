@@ -1,0 +1,236 @@
+@import "reset";
+
+.social-media2 {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;    
+    align-items: flex-end;
+    
+    position: sticky;
+    bottom: 50px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    
+    li > a {
+        text-decoration: none;
+    }
+    &__blog {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        align-items: center;        
+        gap: 28px;
+        padding: 12px;
+        background-color: #e17b77;
+        width: 50px;
+        height: 50px;
+        transition: width 1s; 
+        color: white;
+        &::before {
+            font-family: "Font Awesome 5 Brands";
+            font-size: 30px; 
+            content: "\f37c";
+            color: white;
+        }
+        &::after {
+            content:"Check out my Blog";
+            color: white;
+            text-decoration: underline;
+            height: 20px;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        &:hover {
+            width: 250px;
+            transition: width 1s;
+            overflow: hidden;
+            &::after {
+                content:"Check out my Blog";
+                color: white;
+                text-decoration: underline;
+                height: 20px;
+                overflow: hidden;
+                opacity: 1;
+                transition: opacity 3s;
+            }
+        }
+    
+    }
+    &__facebook {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        align-items: center;        
+        gap: 37px;
+        padding: 12px;
+        background-color: #3b5998;
+        width: 50px;
+        height: 50px;
+        transition: width 1s;
+        overflow: hidden;
+        color: white;
+        &::before {
+            font-family: "Font Awesome 5 Brands";
+            font-size: 30px; 
+            content: "\f39e";
+            color: white;
+        }
+        &::after {
+            content:"Like my Facebook page";
+            color: white;
+            text-decoration: underline;
+            height: 20px;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        &:hover {
+            width: 250px;
+            transition: width 1s;
+            overflow: hidden;
+            &::after {
+                content:"Like my Facebook page";
+                color: white;
+                text-decoration: underline;
+                height: 20px;
+                overflow: hidden;
+                opacity: 1;
+                transition: opacity 3s;
+            }
+        }
+   
+    }
+    &__twitter {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        align-items: center;        
+        gap: 26px;
+        padding: 12px;
+        background-color: #00aced;
+        width: 50px;
+        height: 50px;
+        transition: width 1s;
+        overflow: hidden;
+        color: white;
+        &::before {
+            font-family: "Font Awesome 5 Brands";
+            font-size: 30px; 
+            content: "\f099";
+            color: white;
+        }
+        &::after {
+            content:"Follow me on Twitter";
+            color: white;
+            text-decoration: underline;
+            height: 20px;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        &:hover {
+            width: 250px;
+            transition: width 1s;
+            overflow: hidden;
+            &::after {
+                content:"Follow me on Twitter";
+                color: white;
+                text-decoration: underline;
+                height: 20px;
+                overflow: hidden;
+                opacity: 1;
+                transition: opacity 3s;
+            }
+        }
+    }
+    &__github {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        align-items: center;        
+        gap: 33px;
+        padding: 12px;
+        background-color: #333;
+        width: 50px;
+        height: 50px;
+        transition: width 1s;
+        overflow: hidden;
+        color: white;
+        &::before {
+            font-family: "Font Awesome 5 Brands";
+            font-size: 30px; 
+            content: "\f09b";
+            color: white;
+            margin-left: -5px;
+        }
+        &::after {
+            content:"See projects on Github";
+            color: white;
+            text-decoration: underline;
+            height: 20px;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        &:hover {
+            width: 250px;
+            transition: width 1s;
+            overflow: hidden;
+            &::after {
+                content:"See projects on Github";
+                color: white;
+                text-decoration: underline;
+                height: 20px;
+                overflow: hidden;
+                opacity: 1;
+                transition: opacity 3s;
+            }
+        }  
+    }
+    &__linkedin {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: start;
+        align-items: center;        
+        gap: 30px;
+        padding: 12px;
+        background-color: #007bb6;
+        width: 50px;
+        height: 50px;
+        transition: width 1s;
+        overflow: hidden;
+        color: white;
+        &::before {
+            font-family: "Font Awesome 5 Brands";
+            font-size: 30px; 
+            content: "\f0e1";
+            color: white;
+        }
+        &::after {
+            content:"Connect on LinkedIn";
+            color: white;
+            text-decoration: underline;
+            height: 20px;
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+        &:hover {
+            width: 250px;
+            transition: width 1s;
+            overflow: hidden;
+            &::after {
+                content:"Connect on LinkedIn";
+                color: white;
+                text-decoration: underline;
+                height: 20px;
+                overflow: hidden;
+                opacity: 1;
+                transition: opacity 3s;
+            }
+        }    
+    }
+}

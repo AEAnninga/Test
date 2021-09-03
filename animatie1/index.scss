@@ -1,0 +1,139 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$color-header : whitesmoke;
+
+@mixin flex($flow, $space) {
+    display: flex;
+    flex-flow: $flow;
+    justify-content: $space;        
+    list-style: none;
+    width: 100%;
+}
+
+@mixin animation() {    
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(.37,.32,0,1.87);
+    animation-fill-mode: forwards;       
+}
+
+@keyframes move {
+    from{transform: translateX(-500px) rotateX(0deg)}
+    to{transform: translateX(0px) rotateZ(7200deg)}
+}
+@keyframes move2 {
+    from{transform: scale(1) translateY(0px)}
+    to{transform: scale(1.5) translateY(50px)}
+}
+
+@keyframes move3 {
+    from{transform: scale(1) translate(0px, 0px)}
+    to{transform: scale(1.5) translate(75px, 50px)}
+}
+
+@keyframes move4 {
+    from{transform: scale(1) translate(0px, 0px)}
+    to{transform: scale(1.5) translate(-75px, 50px)}
+}
+
+
+
+body {
+    background: turquoise;
+}
+nav {
+    @include animation();
+    display: flex;
+    align-items: center;
+    height: 150px;        
+    ul {
+        @include flex(row nowrap, center);        
+        gap: 10px;
+        padding: 10px;        
+        li {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid white;
+            border-radius: 10px; 
+            width: 100%;
+            height: 100px;
+            background: blueviolet ;
+            &:active {
+                position: initial;
+                box-shadow: 40px 40px 40px blueviolet;
+                animation: move2;
+                animation-duration: 500ms;
+                animation-timing-function: cubic-bezier(.97,.29,.21,1.87);
+                animation-fill-mode: both;   
+            }
+            &:first-child {
+                &:active {
+                    position: initial;
+                    box-shadow: 40px 40px 40px blueviolet;
+                    animation: move3;
+                    animation-duration: 500ms;
+                    animation-timing-function: cubic-bezier(.97,.29,.21,1.87);
+                    animation-fill-mode: both;  
+                }
+
+            }
+            &:nth-child(4) {
+                a { 
+                    color: $color-header;
+                }    
+                &:active {
+                    position: initial;
+                    box-shadow: 40px 40px 40px blueviolet;
+                    animation: move4;
+                    animation-duration: 500ms;
+                    animation-timing-function: cubic-bezier(.97,.29,.21,1.87);
+                    animation-fill-mode: both; 
+                }
+            }
+            a{
+                text-decoration: none;
+                &:active {
+                    position: initial;
+                    box-shadow: 40px 40px 40px blueviolet;
+                    animation: move2;
+                    animation-duration: 500ms;
+                    animation-timing-function: cubic-bezier(.97,.29,.21,1.87);
+                    animation-fill-mode: both;   
+                }
+                &[href="https://www.google.nl"] {
+                    color: purple;
+                }
+                &[for="Ethan"] {
+                    color: aqua;                    
+                }
+            }    
+        }    
+    }
+}
+
+article {
+    h1{
+        color: $color-header;
+        background-color: purple;    
+    }
+    p {
+        color: $color-header;
+        background: blue;
+        strong {
+            color: darkslategrey;
+            background: yellow;
+        }
+    }
+}
+
+
+
+
+
+
+
